@@ -5,6 +5,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Stage 2: Chạy với Tomcat
-FROM tomcat:10.1-jdk17
-COPY --from=build /app/target/crm_app.war /usr/local/tomcat/webapps/crm_app.war
+FROM tomcat:9.0-jdk11
+COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
