@@ -46,7 +46,7 @@
   </dependencies>
 
   <build>
-    <finalName>servlet</finalName>
+    <finalName>crm_app</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
