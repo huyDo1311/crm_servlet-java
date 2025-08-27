@@ -39,11 +39,11 @@ public class MySQLConfig {
 
         try {
             // Lấy thông tin từ biến môi trường
-            String host = System.getenv("MYSQLHOST");       // RAILWAY_PRIVATE_DOMAIN
-            String port = System.getenv("MYSQLPORT");       // 3306
-            String database = System.getenv("MYSQLDATABASE"); // railway
-            String username = System.getenv("MYSQLUSER");   // root
-            String password = System.getenv("MYSQLPASSWORD"); // OszVjuKBuFnKUFBrNHdkBJHOVLyFOziy
+            String host = "crossover.proxy.rlwy.net";
+            String port = "41629";
+            String database = "railway";
+            String username = "root";
+            String password = "OszVjuKBuFnKUFBrNHdkBJHOVLyFOziy";
 
             // JDBC URL chuẩn MySQL
             String url = "jdbc:mysql://" + host + ":" + port + "/" + database +
