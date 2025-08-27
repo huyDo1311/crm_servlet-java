@@ -9,9 +9,13 @@ public class MySQLConfig {
 		Connection connection = null;
 		
 		try {
-			String url = "jdbc:mysql://localhost:3306/crm_app";
+			// String url = "jdbc:mysql://localhost:3306/crm_app";
+			// String username = "root";
+			// String password = "admin123";
+
+			String url = "crossover.proxy.rlwy.net:41629/railway";
 			String username = "root";
-			String password = "admin123";
+			String password = "OszVjuKBuFnKUFBrNHdkBJHOVLyFOziy";
 	
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -25,5 +29,4 @@ public class MySQLConfig {
 		
 	}
 }
-
 
